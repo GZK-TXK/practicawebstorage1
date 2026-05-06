@@ -80,19 +80,17 @@ function dibujarTabla() {
     if (productos !== null) {
 //
 for (let i = 0; i < productos.length; i++) {
-lista.innerHTML += `
-<tr>
-<td>${productos[i].nombre}</td>
-<td>${productos[i].contador}</td>
-<td>
-<button onclick="eliminarProducto('${productos[i].nombre}')">Eliminar</button>
-</td>
-</tr>
-`;
-}
-}
-}
-
+    lista.innerHTML += `
+        <tr>
+        <td>${productos[i].nombre}</td>
+        <td>${productos[i].contador}</td>
+        <td>
+        <button onclick="eliminarProducto('${productos[i].nombre}')">Eliminar</button>
+        </td>
+        </tr>
+    `;
+    }
+}};
 // Ejecutar al cargar la página para que los datos persistan
 dibujarTabla();
 
